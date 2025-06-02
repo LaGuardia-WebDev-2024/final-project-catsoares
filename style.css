@@ -1,9 +1,11 @@
 /* Styling Only Related To ALL Pages */
-
+@import url('https://fonts.googleapis.com/css2?family=Ranchers&family=Tac+One&display=swap');
 body {
   padding-top: 30px;
   margin-left: 0px;
   margin-right: 0px;
+font-family: "Ranchers", sans-serif;
+
 }
 /* ⬆⬆⬆⬆ Nav Bar Styling 
 ~~~~~ Taken From: 
@@ -42,4 +44,5 @@ ul.nav .active {
 
 h1 {
   width: 100%;
+  color:white;
 }
