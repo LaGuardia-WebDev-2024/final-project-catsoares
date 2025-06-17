@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Final Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+       body{
+        background-image:url("https://cdn.glitch.global/4e50d379-4d98-47b2-804d-e83e54f697b4/me%20in%20locker%20room.png?v=1749842582888")
+      /* Styling Only Related To THIS Page */
+      .parent-flex {
+        display: flex;
+        background-color: hotpink;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 50px;
+      }
+
+      .parent-flex img {
+        width: 150px;
+        padding: 20px;
+      }
+      .child-flex p {
+        background-color: hotpink;
+        padding: 20px;
+        margin: 20px;
+      }
+
+      /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+      .flip-card {
+        background-color: transparent;
+        width: 600px;
+        height: 500px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
+      }
+
+      /* This container is needed to position the front and back side */
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+
+      /* Position the front and back side */
+      .flip-card-front,
+      .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+      }
+
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: #bbb;
+        color: black;
+      }
+
+      /* Style the back side */
+      .flip-card-back {
+        background-color: black;
+        color: white;
+        transform: rotateY(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- ⬆⬆⬆⬆ Nav Bar -->
+    <ul class="nav">
+      <li><a href="index.html">LITTER BOX</a></li>
+      <li><a class="active" href="portfolio.html">Portfolio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="inquiries.html">Inquiries</a></li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://cdn.glitch.global/4e50d379-4d98-47b2-804d-e83e54f697b4/me%20soho.png?v=1749841984881"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+      <li style="float: right">
+        <a target="_blank" href=""
+          ><img
+            src="https://img.icons8.com/win10/512/FFFFFF/instagram-new.png"
+            style="width: 25px; margin: -5px"
+        /></a>
+      </li>
+    </ul>
+
+    <!-- ⬇⬇⬇⬇⬇⬇ Main Page Content -->
+    <h1>About Me</h1>
+    <center> 
+    
+<!--     <div class="parent-flex"> -->
+      <div class="child-flex">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://cdn.glitch.global/4e50d379-4d98-47b2-804d-e83e54f697b4/brooke%20car%20b%26w.png?v=1749755443803"
+                alt="Avatar"
+                style="width: 600px; height: 500px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>PROJECT LES GENS</h1>
+              <p>ISSUE #001</p>
+              <p>BROOKE TIMBER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="child-flex">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://cdn.glitch.global/4e50d379-4d98-47b2-804d-e83e54f697b4/my%20art.png?v=1749842595303"
+                alt="Avatar"
+                style="width: 600px; height: 500px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>SKETCH BY CAT</h1>
+              <p>PENCIL</p>
+              <p>2023</p>
+            </div>
+          </div>
+        </div>
+      </div>
+       <div class="child-flex">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img
+                src="https://cdn.glitch.global/4e50d379-4d98-47b2-804d-e83e54f697b4/punk%20nyc.png?v=1749756635004
+                     "
+                alt="Avatar"
+                style="width: 600px; height: 500px"
+              />
+            </div>
+            <div class="flip-card-back">
+              <h1>PHOTOGRAPHY BY CAT</h1>
+              <p>JJ & HANNA / AFTER PUNK SHOW IN NYC</p>
+              <p>2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="parent-flex">
+      <div class="child-flex">
+        <p>
+          THESE ARE ONLY A COUPLE EXAMPLES OF CAT'S WORKS. FOR MORE, STAY TUNED!
+        </p>
+      </div>
+      <div class="child-flex">
+        <img
+          src="https://cdn.glitch.global/0c264bf4-23f0-42f0-ac26-96d6871eec31/Untitled100.png?v=1746635377571"
+        />
+      </div>
+    </div>
+  </center>
+  </body>
+</html>
